@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -9,48 +9,36 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-
     <header class="header">
         <div class="container header-container">
-            <a href="/index.html" class="logo">
-                Vr Story
-            </a>
+            <a href="./index.html" class="logo">Vr Story</a>
 
-            <!-- NAVIGATION -->
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="/explore.html">Explore</a></li>
-                    <li><a href="/resources.html">Resources</a></li>
-                    <li><a href="/pricing.html">Pricing</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Pricing</a></li>
                 </ul>
             </nav>
 
-            <!-- ACTIONS -->
             <div class="header-actions">
-
-                <!-- ICON BUTTON -->
-                <button class="icon-btn">
-                    <img src="img/Vector.png" alt="icon">
+                <button class="icon-btn" type="button" aria-label="Login">
+                    <img src="./img/vector.png" alt="" />
                 </button>
 
-                <!-- BUTTON -->
-                <a href="/start-creating.html" class="btn header-btn">
-                    Start Creating
-                </a>
-
+                <a href="#" class="btn header-btn">Start Creating</a>
             </div>
 
-            <!-- BURGER -->
-            <button class="burger">
+            <button class="burger" type="button" aria-label="Open menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -58,163 +46,93 @@
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero hero-bg">
-        <div class="container hero-container ">
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-container">
 
-            <!-- LEFT -->
-            <div class="hero-content">
+                <div class="hero-content">
+                    <div class="hero-decor">
+                        <img src="./img/holographic-1x.png" alt="" />
+                    </div>
 
-                <!-- DECOR -->
-                <div class="hero-decor">
-                    <img src="img/Holographic-1x.png" alt="">
+                    <h1 class="hero-title">
+                        Let’s Create <br />
+                        Your Story <br />
+                        Together!
+                    </h1>
+
+                    <p class="hero-text">
+                        Vr story is an interactive tool that makes it easy for anyone
+                        to produce engaging digital experiences
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-outline">Learn More</a>
+
+                        <a href="#" class="btn btn-primary">
+                            <img src="./img/play1.png" alt="" />
+                            Watch Demo
+                        </a>
+                    </div>
                 </div>
 
-                <h1 class="hero-title">
-                    Let’s Create <br>
-                    Your Story <br>
-                    Together!
-                </h1>
-
-                <p class="hero-text">
-                    Vr story is an interactive tool that makes it
-                    easy for anyone to produce engaging
-                    digital experiences
-                </p>
-
-                <!-- BUTTONS -->
-                <div class="hero-buttons">
-
-                    <a href="/learn-more.html" class="btn btn-outline">
-                        Learn More
-                    </a>
-
-                    <a href="/watch-demo.html " class="btn btn-primary">
-                        <img src="img/play.png" alt="">
-                        Watch Demo
-                    </a>
-
+                <div class="hero-image">
+                    <img src="./img/future-1x.png" alt="Future character" />
                 </div>
 
             </div>
+        </section>
 
-            <!-- <img src="img/future-1x.png" alt="Future Image" class="hero-image"> -->
+        <!-- STORYTELLING -->
+        <!-- <section class="storytelling">
+            <div class="container storytelling-container">
 
-        </div>
+                <h2 class="section-title">
+                    We Take Storytelling Seriously
+                </h2>
 
-    </section>
+                <div class="storytelling-content">
 
-    <!-- STORY SECTION -->
+                    <div class="storytelling-video">
+                        <img src="./img/rectangle-2x.png" alt="VR video preview">
 
-    <section class="story">
-        <div class="container-story">
-
-            <h2 class="story-title">
-                We Take Storytelling Seriously
-            </h2>
-
-            <div class="story-wrapper">
-                <!-- LEFT SIDE -->
-                <div class="story-left">
-                    <!-- VIDEO -->
-                    <div class="story-video">
-
-                        <!-- PREVIEW IMAGE -->
-                        <img src="img/Rectangle-1x.png" alt="video preview" class="story-video-preview">
-
-                        <!-- PLAY BUTTON -->
-                        <button class="play-btn"
-                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1&mute=1">
-                            <img src="img/Group-1x.png" alt="video preview" data-video="#">
+                        <button class="play-btn" type="button" aria-label="Play video">
+                            <span></span>
                         </button>
+                    </div>
 
+                    <div class="storytelling-info">
+                        <div class="storytelling-decor">
+                            <img src="./img/holographic1-2x.png" alt="">
+                        </div>
+
+                        <ul class="storytelling-list">
+                            <li class="active">Mixed Reality</li>
+                            <li>Storytelling</li>
+                            <li>360° Content</li>
+                            <li>Immersive Marketing</li>
+                            <li>Virtual Tours</li>
+                            <li>Augmented Reality <span>(come soon)</span></li>
+                            <li>Virtual Reality <span>(come soon)</span></li>
+                        </ul>
                     </div>
 
                 </div>
 
-                <!-- RIGHT SIDE -->
-                <div class="story-right">
-
-                    <!-- DECOR -->
-                    <div class="story-shape">
-                        <img src="img/Holographic1-1x.png" alt="shape">
-                    </div>
-
-                    <!-- CATEGORY -->
-                    <div class="story-category">
-                        <img src="img/play.png" alt="shape">
-                        Mixed Reality
-                    </div>
-
-                    <!-- LIST -->
-                    <ul class="story-list">
-                        <li>Storytelling</li>
-                        <li>360° Content</li>
-                        <li>Immersive Marketing</li>
-                        <li>Virtual Tours</li>
-                        <li>
-                            Augmented Reality
-                            <span>(COMING SOON)</span>
-                        </li>
-                        <li>
-                            Virtual Reality
-                            <span>(COMING SOON)</span>
-                        </li>
-                    </ul>
-
+                <div class="partners-logos">
+                    <img src="./img/procad.png" alt="Procad">
+                    <img src="./img/valour.png" alt="Valour">
+                    <img src="./img/brave.png" alt="Brave">
+                    <img src="./img/wise-owl.png" alt="Wise Owl">
+                    <img src="./img/flow.png" alt="Flow">
                 </div>
 
             </div>
-
-            <!-- BRANDS -->
-            <!-- <div class="brands">
-
-                <div class="brand-item">
-                    <img src="img/brand-1.png" alt="brand">
-                </div>
-
-                <div class="brand-item">
-                    <img src="img/brand-2.png" alt="brand">
-                </div>
-
-                <div class="brand-item">
-                    <img src="img/brand-3.png" alt="brand">
-                </div>
-
-                <div class="brand-item">
-                    <img src="img/brand-4.png" alt="brand">
-                </div>
-
-                <div class="brand-item">
-                    <img src="img/brand-5.png" alt="brand">
-                </div>
-
-            </div> -->
-
-        </div>
-
-    </section>
-
-    <!-- VIDEO MODAL -->
-
-    <!-- <div class="video-modal" id="videoModal">
-
-        <div class="video-modal-content">
-
-            <button class="video-close">
-                ✕
-            </button>
-
-            <iframe id="youtubeFrame" src="" title="YouTube video player" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
-
-        </div>
-
-    </div> -->
+        </section> -->
 
 
-
-
+    </main>
 
 </body>
 
